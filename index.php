@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-      <div id="container">
+      <div class="container">
        <main> 
          <h1>Newsletter</h1>
          <p>Subscribe to our newsletter to get updates, latest news and special offers</p> 
