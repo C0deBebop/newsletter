@@ -1,3 +1,14 @@
+<?php
+
+require 'newsletter.php';
+
+$email = $_POST['email'];
+//pass your db credentials to the Database instance
+$db =  new Database('host', 'database user', 'database password', 'database');
+$newsletter = new Newsletter($db);
+$newsletter->subscribe($email);
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
