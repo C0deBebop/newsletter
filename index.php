@@ -10,7 +10,7 @@
          <p>Subscribe to our newsletter to get updates, latest news and special offers</p> 
          <form method="post" action="subscribe.php">
             <input type="email" name="email" required>
-            <input type="submit" id="subscribeBtn" value="subscribe">
+            <input type="submit" id="subscribeBtn" name="submit" value="subscribe">
          </form>
         </main> 
       </div>

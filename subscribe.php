@@ -1,12 +1,16 @@
 <?php
 
-require 'newsletter.php';
 
-$email = $_POST['email'];
-//pass your db credentials to the Database instance
-$db =  new Database('host', 'database user', 'database password', 'database');
-$newsletter = new Newsletter($db);
-$newsletter->subscribe($email);
+if(isset($_POST['submit'])) {
+    require 'newsletter.php';
+    $email = $_POST['email'];
+    //pass your db credentials to the Database instance object
+    $db =  new Database('host', 'database user', 'database password', 'database');
+    $newsletter = new Newsletter($db);
+    $newsletter->subscribe($email);
+} else {
+    header('Location: index.php');
+}
 
 ?>
 <!DOCTYPE html>
