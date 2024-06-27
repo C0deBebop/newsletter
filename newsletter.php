@@ -29,22 +29,14 @@ class Newsletter {
         $stmt->close();
     }
 
+
     public function get_subscriptions(){
         $mysqli = @new mysqli($this->db->host, $this->db->user, $this->db->password, $this->db->db);
         $results = $mysqli->query("SELECT * FROM users");
-        if($results->num_rows > 0){
-            while($row = $results->fetch_assoc()){
-                $formatted_date = new DateTime($row['date_added']);
-                if($row['subscription'] > 0){
-                    echo '<li>' . $row['email'] . '</li>';
-                    echo '<li>' . $formatted_date->format('d-m-Y') . '</li>';
-                    echo "<li><a class='unsubscribe' href='/newsletter/dashboard/?id=" . $row['id'] .  "'>unsubscribe</a></li>";
-                } 
-            }
-        } else {
-            echo 'There are no subscribed users';
-        }
+        return $results;
     }
+
+
 
     /*
     public function send_newsletter(){

@@ -24,7 +24,7 @@ class Administrator {
             while($row = $result->fetch_assoc()){
                  if(hash_equals(hash('sha256', $password), $row['password']) && $username == $row['username']){
                      $newsletter = new Newsletter($this->db);
-                     $newsletter->get_subscriptions();                     
+                     return $newsletter->get_subscriptions();                     
                  } else {
                      return header('Location: /newsletter/dashboard/index.php');
                  }

@@ -47,7 +47,7 @@ color: #393939;
 margin-bottom: 25px;
 }
 
-.container form input[type='text']::placeholder, .container form input[type='password']::placeholder {
+.container form input[type='text']::placeholder, .container form input[type='password']::placeholder, textarea::placeholder {
 padding-left: 5px;
 }    
 
@@ -62,16 +62,16 @@ color: #fafafa;
 cursor: pointer; 
 }
 
-#newsletter-subscription {
+.newsletter-subscription {
 width: 85%;
-height: 420px;
+height: auto;
 margin: 150px auto 0 auto;
 padding: 50px;
 background: #fafafa;
 filter: drop-shadow(2px 2px 2pc rgba(0,0,0,0.5));
 }
 
-#newsletter-subscription div {
+.newsletter-subscription div {
 width: 100%;
 height: 230px;
 overflow-y: scroll;
@@ -80,25 +80,25 @@ margin-top: 25px;
 }
 
 
-#newsletter-subscription ul:first-of-type {
+.newsletter-subscription ul:first-of-type {
 width: 100%;    
 margin: 5px auto 0 auto;   
 padding: 10px 0; 
 }
     
-#newsletter-subscription ul:first-of-type li {
+.newsletter-subscription ul:first-of-type li {
 width: 19.5%;  
 font: normal 900 1em Avenir, sans-serif;   
 }
         
 
-#newsletter-subscription ul {
+.newsletter-subscription ul {
 width: 100%;    
 margin: 0 auto;
 overflow-y: scroll; 
 }
 
-#newsletter-subscription ul li {
+.newsletter-subscription ul li {
 width: 19.5%;    
 display: inline-block;
 list-style-type: none;
@@ -112,16 +112,16 @@ text-align: justify;
 border-bottom: 1px solid rgba(212, 212, 212, 0.8);
 }
 
-#newsletter-subscription ul li a {
+.newsletter-subscription ul li a {
 color: #131313;
 }
 
-#newsletter-subscription ul li a:hover {
+.newsletter-subscription ul li a:hover {
 color: #000000;
 text-decoration: none;
 }
 
-#newsletter-subscription ul:nth-child(2) li:nth-last-child(-n+3) {
+.newsletter-subscription ul:nth-child(2) li:nth-last-child(-n+3) {
 border: none;
 }
 
@@ -140,3 +140,22 @@ text-decoration: none;
 margin: 50px auto 0 auto;
 }
 
+
+
+p {
+font: normal 500 1em Avenir, sans-serif;
+color: #393939; 
+padding-left: 5px; 
+margin: 20px 0 0 25px;  
+}
+
+textarea {
+width: 100%;
+height: 120px;
+border: 1px solid rgba(212, 212, 212, 0.8);
+margin: 5px 0 45px 0;
+padding-top: 5px;
+font: normal 500 1em Avenir, sans-serif; 
+color: #393939; 
+}
+    
