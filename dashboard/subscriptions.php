@@ -7,6 +7,7 @@
       <div class="container">
        <div id="newsletter-subscription"> 
          <h1>Newsletter Subscriptions</h1>
+         <div>
          <ul><li>E-mail</li><li>Date added</li><li>Subscription</li></ul>
          <ul>
         <?php
@@ -17,6 +18,8 @@
                 echo $results;
         ?>
         </ul>
+       </div>
+        <a href="#" id="newsletter">send newsletter</a>
      </div> 
   </div>
   <script src="js/main.js"></script>
